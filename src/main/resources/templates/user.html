@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 14px; /* Зменшуємо розмір тексту кнопок */
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<form id="userForm">
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+
+    <button type="button" id="saveUserButton">Зберегти</button>
+</form>
+<br>
+<form id="sendMessageForm">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+
+    <button type="button" id="sendMessageButton">Відправити</button>
+</form>
+<br>
+<form id="getUsersForm">
+    <button type="button" id="getUsersButton">Користувачі</button>
+    <div id="userList"></div>
+</form>
+
+<script type="text/javascript" src="../static.js/user.js"></script>
+
+</body>
+</html>
